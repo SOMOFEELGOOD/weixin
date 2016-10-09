@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<style type="text/css">
+		
+		ul{
+			padding: 0px 15px;
+		}
+		ul li a div:nth-child(1){
+			width: 29%;
+			float: left;
+			margin-right: 4.3%;
+			position: relative;
+			height: 90px;
+			
+		}
+		ul li a div:nth-child(2){
+			width: 65.7%;
+			float: left;
+		}
+		ul li{
+			margin-top: 10px;
+			border-bottom: 1px solid #dddddd;
+		}
+		ul li a div img{
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+		}
+		
+		ul{
+			border-top:10px solid #dddddd;
+		}
+		ul li{
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+		}
+		.search input{
+			width: 100%;
+			border:1px solid #ff8a33;
+			border-radius: 2px;
+			padding: 7px 0;
+			font-size: 14px;
+			color: #ff8a33;
+			text-indent: 28px;
+			background: url(img/sou.png) no-repeat left;
+			background-size: 16px;
+			background-position-x: 6px;
+		}
+		.search{
+			padding: 2% 4%;
+			position: relative;
+		}
+		#result{
+			position: absolute;
+			background-color: white;
+			width:92%;
+			border:1px solid white;
+			z-index: 2;
+		}
+		#result a{
+			color: black;
+			font-size: 14px;
+			display: block;
+		}
+		#result a:active{
+			background-color: #ff8a33;
+			color:white;
+		}
+		#result li a{
+			
+			padding: 5px 0px 5px 28px;
+		}
+		.xia{
+			float: right;
+		}
+		.xia:before{
+			content: "";
+			width: 15px;
+			height: 15px;
+			float: left;
+			background:url(img/down.png) no-repeat center;
+			background-size: 15px;
+			margin-top: 3px;
+		}
+		.div_p p:nth-child(1){
+			font-size: 16px;
+			font-weight: bolder;
+			color: black;
+		}
+		.div_p p:nth-child(2){
+			font-size: 14px;
+			color: black;
+		}
+		.div_p p:nth-child(3){
+			font-size: 14px;
+			color: gray;
+		}
+		.div_p p:nth-child(4){
+			font-size: 16px;
+			font-weight: bolder;
+			color: #ff8a33;
+		}
+		#to_top{
+			width: 30px;
+			position: fixed;
+			bottom: 25px;
+			right: 25px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="search">
+			<input type="text" id="search_bar" value="请输入品牌、车型查询车型成交低价" onfocus="javascript:this.value='';" onblur="javascript:this.value = '请输入品牌、车型查询车型成交低价'"/>
+			<ol id="result"></ol>
+		</div>
+		
+		<a href=""><img src="img/header.png"/></a>
+		<ul>
+			<li >
+				<a href="buy_detail.html" class="clearfix">
+				<div>
+				<img src="img/car1.png" alt="" />
+				</div>
+				<div class="div_p">
+					<p>
+						东风本田 XRV
+					</p>
+					<p>
+						2015款&nbsp;1.5L&nbsp;手动经典版
+					</p>
+					<p>
+						指导价&nbsp;:&nbsp;12.78万
+					</p>
+					
+					<p class="clearfix">
+						特卖价&nbsp;:&nbsp;12.18万<span class="xia">6000</span>
+					</p>
+				</div>
+				</a>
+			</li>
+			<li >
+				<a href="buy_detail.html" class="clearfix">
+				<div>
+				<img src="img/car2.png" alt="" />
+				</div>
+				<div class="div_p">
+					<p>
+						奔驰AMG-奔驰C级AMG
+					</p>
+					<p>
+						2015款 &nbsp;C&nbsp;63
+					</p>
+					<p>
+						指导价&nbsp;:&nbsp;99.80万
+					</p>
+					
+					<p class="clearfix">
+						特卖价&nbsp;:&nbsp;89.80万<span class="xia">10万</span>
+					</p>
+				</div>
+				</a>
+			</li>
+			<li >
+				<a href="buy_detail.html" class="clearfix">
+				<div>
+				<img src="img/car3.png" alt="" />
+				</div>
+				<div class="div_p">
+					<p>
+						奔驰(进口)-奔驰SL级
+					</p>
+					<p>
+						2015款 &nbsp;C&nbsp;63
+					</p>
+					<p>
+						指导价&nbsp;:&nbsp;106.08万
+					</p>
+					
+					<p class="clearfix">
+						特卖价&nbsp;:&nbsp;105.80万<span class="xia">2800</span>
+					</p>
+				</div>
+				</a>
+			</li>
+			<li >
+				<a href="buy_detail.html" class="clearfix">
+				<div>
+				<img src="img/car4.png" alt="" />
+				</div>
+				<div class="div_p">
+					<p>
+						一汽丰田-RAV4荣放
+					</p>
+					<p>
+						2015款 &nbsp;C&nbsp;63
+					</p>
+					<p>
+						指导价&nbsp;:&nbsp;12.78万
+					</p>
+					
+					<p class="clearfix">
+						特卖价&nbsp;:&nbsp;12.18万<span class="xia">6000</span>
+					</p>
+				</div>
+				</a>
+			</li>
+		</ul>
+		<div id="to_top"><img src="img/gotop.png"/></div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(function(){
+
+			$("#search_bar").on("input",function(){
+				var url="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+$(this).val()+""
+
+
+				$.ajax({
+				type:"GET",
+				url:url,
+				dataType:"jsonp",
+				jsonp:"cb",
+				success:function(data){
+					console.log(data)
+					var data = JSON.stringify(data)
+					alert(data)
+					handleData(data)
+				}
+			})
+			})
+			function handleData(data){
+					$("#result").html("")
+
+					console.log(data)
+					for(var i = 0;i<data.s.length;i++){
+						var $li=$("<li></li>")
+						$li.html("<a href ='https://sp0.baidu.com/s?wd="+data.s[i]+"'>"+data.s[i]+"</a>")
+						$("#result").append($li)
+					}
+			}
+//			失去焦点时  #result消失
+			$("#search_bar").blur(function(){
+				$("#result").html("")
+			})
+		
+		$("#to_top").click(function () {
+        var speed=200;//滑动的速度
+        $('body,html').animate({ scrollTop: 0 }, speed);
+        return false;
+   		}); 
+   		})
+   		
+   		
+   		
+		</script>
+	</body>
+</html>

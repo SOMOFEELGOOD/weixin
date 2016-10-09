@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
+		<style type="text/css">
+			.swiper-container {
+   				 /*width: 100%;*/
+			}  
+			
+			.contain{
+				padding: 10px 15px;
+			}
+			.div_p{
+				border-bottom: 10px solid #dddddd;
+				border-top: 10px solid #dddddd;
+				padding: 0 15px;
+			}
+			.div_p p{
+				margin: 5px 0;
+			}
+			.div_p p:nth-child(1){
+				font-size: 16px;
+				font-weight: bolder;
+				color: black;
+			}
+			.div_p p:nth-child(2){
+				font-size: 14px;
+				color: black;
+			}
+			.div_p p:nth-child(3){
+				font-size: 14px;
+				color: gray;
+			}
+			.div_p p:nth-child(4){
+				font-size: 16px;
+				font-weight: bolder;
+				color: #ff8a33;
+			}
+			.xia{
+				float: right;
+			}
+			.xia:before{
+				content: "";
+				width: 15px;
+				height: 15px;
+				float: left;
+				background:url(img/down.png) no-repeat center;
+				background-size: 15px;
+				margin-top: 3px;
+			}
+			.div_middle{
+				border-bottom:10px solid #dddddd;
+				padding: 10px 15px;
+			}
+			.div_middle p{
+				font-size: 14px;
+			}
+			.div_middle p:nth-child(1){
+				font-weight: bolder;
+				
+			}
+			.div_middle p:nth-child(2){
+				color: gray;
+			}
+			.jisuanqi{
+				font-size: 14px;
+				padding: 5px 15px;
+			}
+			ol li p{
+				float: left;
+				height: 40px;
+				line-height: 40px;
+			}
+			ol li p:nth-child(1){
+				width: 35%;
+				text-align: center;
+				color: gray;
+			}
+			ol li p:nth-child(2){
+				width: 65%;
+				text-align: center;
+				
+			}
+			ol li p:nth-child(3){
+				width: 30%;
+				text-align: center;
+			}
+			ol li p:nth-child(4){
+				width: 70%;
+				text-align: center;
+				font-size: 12px;
+				color: gray;
+			}
+			ol{
+				/*border:1px solid gray;*/
+				border-top:1px solid gray;
+				border-left:1px solid gray;
+				border-right:1px solid gray;
+				border-radius:3px;
+				margin: 10px 15px;
+				font-size: 14px;
+			}
+			ol li{
+				border-bottom: 1px solid gray;
+			}
+			
+			ul{
+				padding: 10px 15px;
+				font-size: 16px;
+				
+			}
+			ul li{
+				width: 45%;
+				text-align: center;
+				height: 40px;
+				line-height: 40px;
+				border:1px solid #ff8a33;
+				margin-bottom: 10px;
+				border-radius: 5px;
+			}
+			ul li:nth-child(1){
+				float: left;
+			}
+			ul li:nth-child(2){
+				float: right;
+			}
+			
+			ul li a{
+				color: black;
+				display: block;
+				width: 100%;
+				height: 100%;
+				
+			}
+			ul li a:active{
+				color: white;
+				background-color: #ff8a33;
+			}
+			ul li a:hover{
+				color: white;
+				background-color: #ff8a33;
+			}
+			
+			
+			.pic{
+				padding: 0 15px;
+				border-top:10px solid #dddddd;
+			}
+			.pic img{
+				margin-bottom: 5px;
+			}
+			.pic p{
+				font-size: 14px;
+				height: 40;
+				line-height: 40px;
+			}
+		.meng{
+			display: none;
+			position: fixed;
+			top:0;
+			width:100%;
+			height: 100%;
+			background-color: rgba(96,96,96,0.6);
+			z-index: 2;
+		}
+		.biaodan{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			margin:auto;
+			height:300px;
+			width: 80%;
+			background-color: rgba(255,255,255,0.8);
+			padding: 2% 5%;
+			
+			font-size: 15px;
+			
+		}
+		form input{
+			width: 100%;
+			margin-bottom: 8px;
+			border:1px solid gray;
+			padding: 10px 0;
+			text-indent: 10px;
+			border-radius: 4px;
+		}
+		#num{
+			width: 60%;
+			float: left;
+		}
+		#miao{
+			float: right;
+			width:35%;
+			margin: 0;
+			border:0;
+			background-color: #ff8a33;
+			color: white;
+			text-align: center;
+			text-indent: 0;
+		}
+		#tijiao{
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			color: white;
+			background-color: #ff8a33;
+			font-size: 14px;
+			border: none;
+			border-radius: 4px;
+		}
+		#alert{
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			display: none;
+			color: #ff8a33;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/img_11.png"/></div>
+        <div class="swiper-slide"><img src="img/img_11.png"/></div>
+        <div class="swiper-slide"><img src="img/img_11.png"/></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+		
+		<div class="div_p">
+			<p>
+				东风本田 XRV
+			</p>
+			<p>
+				2015款&nbsp;1.5L&nbsp;手动经典版
+			</p>
+			<p>
+				指导价&nbsp;:&nbsp;12.78万
+			</p>	
+			<p class="clearfix">
+				特卖价&nbsp;:&nbsp;12.18万<span class="xia">6000</span>
+			</p>
+		</div>
+		<div class="div_middle">
+			<p>
+				参数配置
+			</p>
+			<p>
+				车主油耗：6.4L/100km(9人均值)<br />
+				车身尺寸：4270*1772*1605<br />
+				综合油耗：6.1L/100km(工信部)<br />
+				车身结构：SUV<br />
+				整车质保：三年或10万公里<br />
+				发动机：1.5L 131马力 L4<br />
+				变速箱：6挡手动<br />
+				驱动方式：前置前驱<br />
+			</p>
+		</div>
+		<p class="jisuanqi">
+			购车计算器  <span style="color:gray">(仅供参考，以实际合同为准)</span>
+		</p>
+		
+		
+		
+		<ol>
+			
+			<li class="clearfix">
+					<p>
+						上牌费
+					</p>
+					<p>
+						免费
+					</p>
+			</li>
+			<li class="clearfix">
+					<p>
+						购置税
+					</p>
+					<p>
+						￥6406
+					</p>
+			</li>
+			<li class="clearfix">
+					<p>
+						车船税
+					</p>
+					<p>
+						￥120
+					</p>
+			</li>
+			<li class="clearfix">
+					<p>
+						交强险
+					</p>
+					<p>
+						￥950
+					</p>
+			</li>
+			<li class="clearfix">
+					<p>
+						商业险
+					</p>
+					<p>
+						￥5000
+						
+					</p>
+					<p> 
+					
+					</p>
+					<p>
+						<span>含20万第三者、车辆盗抢险、车损险</span>
+					</p>
+			</li>
+			<li class="clearfix">
+					<p>
+						全包价
+					</p>
+					<p style="font-size: 16px;color: #ff8a33;">
+						￥10.58万
+					</p>
+			</li>
+		</ol>
+		<div class="pic">
+			<p>
+				图文介绍
+			</p>
+			<img src="img/pic1.png"/>
+			<img src="img/pic2.png"/>
+			<img src="img/pic3.png"/>
+		</div>
+		<ul>
+			<li>
+				<a href="tel:4008292060">电话咨询</a>
+			</li>
+			<li><a href="javascript:void(0);" class="btn">到店洽谈</a></li>
+		</ul>
+			<div class="meng">
+			<div class="biaodan">
+				<p>
+					获取本田XR-V最低价，请填写如下信息给经销商（<span style="color: #ff8a33;">信息保密，不对外公开</span>）
+				</p>
+				<form action="" id="msg" class="clearfix" method="post">
+					<input type="text" name="type" id="type" value="" placeholder="车型"/>
+					<input type="text" name="name" id="name" value="" placeholder="姓名"/>
+					<input type="text" name="phone" id="phone" value="" placeholder="电话号码"/>
+					<input type="text" name="num" id="num" value="" placeholder="验证码"/>
+					<input type="button" name="miao" id="miao" value="获取验证码" onclick="settime(this)"/>
+				</form>
+				<p id="alert">
+						&nbsp;j
+				</p>
+				<button id="tijiao">提&nbsp;&nbsp;&nbsp;&nbsp;交</button>	
+			</div>	
+			</div>	
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.3.1.jquery.min.js" type="text/javascript" charset="utf-8"></script>	
+		<script>  
+		$(function(){
+			
+	
+  var mySwiper = new Swiper ('.swiper-container', {
+//  direction: 'vertical',
+    loop: true,
+    
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    autoplay: 3000,
+    
+  })        
+  		$(".btn").click(function(){
+			$(".meng").css({"display":"block"})
+		})
+		$(".meng").click(function(){
+			$(".meng").css({"display":"none"})
+		})
+//		去除冒泡
+		document.querySelector(".biaodan").addEventListener("click",function(e) {
+		var e = e || window.event;
+		e.stopPropagation();
+		},false)
+		
+		$("#tijiao").click(function(){
+//      	判断是否input空值
+		if ($("#name").val()==""||$("#num").val()==""||$("#phone").val()==""||$("#type").val()==""){
+		$("#alert").css({"display":"inline-block"})
+		$("#alert").html("请填写完整信息")
+		} else{
+//			判断phone是否符合标注
+			var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+			if(!myreg.test($("#phone").val())){ 
+			$("#alert").css({"display":"block"})
+			$("#alert").html("请输入有效的手机号码")
+			} else{
+//				$(".meng").css({"display":"none"})
+				var str_data= {
+							
+							"num":$('#num').val(),
+							"name":$('#name').val(),
+							"phone":$('#phone').val()
+						}; 
+				$.ajax({
+						type:"post",
+						url:"",
+						data:msg,
+						dataType:"json",
+						success:function(data){
+						console.log(data)
+						}
+				});
+				
+			}
+		}
+		})
+})
+//			 获取验证码倒计时
+			var countdown=60; 
+			function settime(val) { 
+			if (countdown == 0) { 
+			val.removeAttribute("disabled");    
+			val.value="获取验证码"; 
+//			countdown = 60; 
+			} else { 
+			val.setAttribute("disabled", true); 
+			val.value="重新发送(" + countdown + ")"; 
+			countdown--; 
+			} 
+			setTimeout(function() { 
+			settime(val) 
+			},1000) 
+			} 
+  </script>
+	</body>
+</html>

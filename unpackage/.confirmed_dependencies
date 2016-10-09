@@ -1,0 +1,54 @@
+{
+	"index.html": {
+		"resources": [
+			"msg.json",
+			"css/base.css",
+			"js/jquery.min.js",
+			"img/img_11.png",
+			"img/img_64.png",
+			"js/swiper-3.3.1.jquery.min.js",
+			"css/swiper-3.3.1.min.css",
+			"img/img_16.png",
+			"img/header.png",
+			"img/sou.png",
+			"img/car4.png",
+			"img/car3.png",
+			"img/down.png",
+			"img/car2.png",
+			"img/car1.png",
+			"img/gotop.png",
+			"img/pic2.png",
+			"js/touch.js",
+			"img/pic1.png",
+			"img/pic3.png",
+			"js/fastclick.js",
+			"img/banner.png",
+			"buy_list.html"
+		],
+		"refer": [
+			"buy_list.html"
+		]
+	},
+	"buy_list.html": {
+		"resources": [
+			"img/header.png",
+			"img/sou.png",
+			"img/gotop.png",
+			"img/down.png",
+			"buy_detail.html"
+		],
+		"refer": [
+			"buy_detail.html"
+		]
+	},
+	"buy_detail.html": {
+		"resources": [
+			"img/pic2.png",
+			"img/pic1.png",
+			"img/pic3.png",
+			"img/img_11.png",
+			"js/swiper-3.3.1.jquery.min.js",
+			"css/swiper-3.3.1.min.css"
+		]
+	}
+}
